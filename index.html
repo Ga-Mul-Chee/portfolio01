@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>공 간</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description"
+        content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+    <meta name="keywords" content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="shortcut icon" href="img/favicon (2).ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script src="js/popUp.js"></script>
+    <script src="js/hover.js"></script>
+    <!-- <script src="js/fade.js"></script> -->
+    <!-- <script type="text/javascript" src="examples.js"></script> -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                scrollingSpeed: 1000
+            });
+
+        });
+    </script>
+ 
+
+</head>
+
+<body>
+
+
+    <ul id="menu">
+        <!--맨 위 왼쪽에 메뉴 나열-->
+        <li data-menuanchor="firstPage"><a href="#firstPage"><img src="img/Untitled-1.png" alt="logo"></a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">공 간</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">내부 시설</a></li>
+        <li data-menuanchor="4thpage"><a href="#4thpage">지점 찾기</a></li>
+    </ul>
+
+
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <!--이미지 슬라이드 섹션-->
+            <div class="slide">
+                <div class="intro">
+                    <div id="slide01">
+                        <img src="img/main00.png" alt="main00">
+                        <div class="slide_text" id="slide01_text">공간을 활용한 디자인</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <div id="slide02">
+                        <img src="img/main01.png" alt="main01">
+                        <div class="slide_text" id="slide02_text">넓은 휴게공간</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <div id="slide03">
+                        <img src="img/main02.png" alt="main02">
+                        <div class="slide_text" id="slide03_text">개인 수납공간</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <div id="slide04">
+                        <img src="img/main03.png" alt="main03">
+                        <div class="slide_text" id="slide04_text">단체활동석 보유</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section " id="section0">
+            <!--좌석사진 상세보기-->
+            <div id="bglayer"></div>
+            <div id="overlayer01">
+                <img src="img/big_img01.jpg" alt="largeImage">
+            </div>
+            <div id="overlayer02">
+                <img src="img/big_img02.jpg" alt="largeImage">
+            </div>
+            <div id="overlayer03">
+                <img src="img/big_img03.jpg" alt="largeImage">
+            </div>
+            <!--//좌석사진 상세보기-->
+
+            <!--기업설명, 좌석설명-->
+
+            <div id="company_info">
+                <video autoplay loop muted src="img/flowers.mp4" id="myVideo">
+                </video>
+                <div class="wrap">
+                    <div id="info_text">
+                        <h2>공간은 재택근무가 활성화된 현재 많은 이용자들을 돕기 위해 만들어진 공간 입니다.</h2>
+                    </div>
+                    <img src="img/logo02.png" alt="logo">
+                </div>
+            </div>
+
+            <a href="#" onclick="alert('준비중인 서비스 입니다.')">
+                <div id="section_ad">
+                    <!-- <img src="img/ad.png" alt="ad"> -->
+                    <h3>
+                        11/1~11/9 '5인이상 등록 할인 행사 진행' <span class="clickBtn"> 상담 신청 바로가기</span>
+                    </h3>
+                </div>
+            </a>
+
+            <div class="wrap" id="section0_02">
+                <article>
+                    <a href="#">
+                        <img src="img/img01.png" alt="img1">
+                        <span class="section0_02_text">
+                            기본형<br>
+                            월 38,000
+                        </span>
+                        <span class="overlap">자세히 보기</span>
+                    </a>
+
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="img/img02.png" alt="img2">
+                        <span class="section0_02_text">
+                            분리형<br>
+                            월 43,000
+                        </span>
+                        <span class="overlap">자세히 보기</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="img/img03.png" alt="img3">
+                        <span class="section0_02_text">
+                            동굴형<br>
+                            월 48,000
+                        </span>
+                        <span class="overlap">자세히 보기</span>
+                    </a>
+                </article>
+                <!-- <div id="section0_sample">
+                    <a href="#">
+                        <div class="sample_box01">
+                            <div class="sample_img"><div class="cover_box01">사진 보기</div><img src="img/img01.png" alt="sample_img01"></div>
+                            <div class="sample_text">
+                                <p>기본형</p>
+                                <p>월 38,000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sample_box02">
+                            <div class="sample_img"><div class="cover_box02">사진 보기</div><img src="img/img02.png" alt="sample_img02"></div>
+                            <div class="sample_text">
+                                <p>분리형</p>
+                                <p>월 43,000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sample_box03">
+                            <div class="sample_img"><div class="cover_box03">사진 보기</div><img src="img/img03.png" alt="sample_img03"></div>
+                            <div class="sample_text">
+                                <p>동굴형</p>
+                                <p>월 48,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+
+        </div>
+
+        <div class="section" id="section2">
+            <div id="section02_cover"></div>
+            <!--전경 사진 여러개-->
+            <div class="intro">
+                <div class="wrap" id="section2_wrap">
+                    <div id="section02_img01"><div id="img_cover01">단체석</div><img src="img/img02_02.png" alt="section02_img01"></div>
+                    <div id="section02_img02"><div id="img_cover02">팀룸</div><img src="img/img02_04.png" alt="section02_img02"></div>
+                    <div id="section02_img03"><div id="img_cover03">개인석</div><img src="img/img02_01.png" alt="section02_img03"></div>
+                    <div id="section02_img04"><div id="img_cover04">미팅룸</div><img src="img/img02_03.png" alt="section02_img04"></div>
+                    <div id="section02_img05"><div id="img_cover05">전경도</div><img src="img/img02_05.png" alt="section02_img05"></div>
+                    <div id="section02_img06"><div id="img_cover06">카페테리아</div><img src="img/img02_07.png" alt="section02_img06"></div>
+                    <div id="section02_img07"><div id="img_cover07">통로</div><img src="img/img02_06.png" alt="section02_img07"></div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="section" id="section3">
+            <!--지도,footer-->
+            <div class="intro">
+                <div id="search">
+                    <div id="search_btn">
+                        <h2>찾고 싶은 지역을 입력해주세요.</h2><br>
+                        <input type="text">
+                        <button  onclick="alert('준비중인 서비스 입니다.')"><img src="img/search.png" alt="search"></button>
+                    </div>
+                </div>
+                <footer id="footer">
+                    <div class="wrap">
+                        <img src="img/logo_footer.png" alt="logo_footer">
+                        <div id="sns">
+                            <a href="#" onclick="alert('준비중인 서비스 입니다.')"><img src="img/face.png" alt="sns01"></a>
+                            <a href="#" onclick="alert('준비중인 서비스 입니다.')"><img src="img/twitter.png" alt="sns02"></a>
+                            <a href="#" onclick="alert('준비중인 서비스 입니다.')"><img src="img/instar.png" alt="sns03"></a>
+                            <a href="#" onclick="alert('준비중인 서비스 입니다.')"><img src="img/youtube.png" alt="sns04"></a>
+
+                        </div>
+                        <div id="address">
+                            상호명 | 공간 &nbsp;&nbsp; 대표자 | 박누구 &nbsp;&nbsp; 사업자등록번호 | 123-44-10239
+                            <br>
+                            주소 | 서울특별시 서초구 강남대로 5길 12 8층 803호
+                            <br>
+                            copyrightⓒgonggan
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

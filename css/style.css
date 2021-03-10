@@ -1,0 +1,131 @@
+h1,h2,h3,h4,h5{font-family: 'Do Hyeon', sans-serif;}
+body{font-family: 'Gothic A1', sans-serif;}
+
+/*상단 고정메뉴*/
+#menu #firstPage img{width: 100px; height: 100px;}
+#menu li{z-index: 9900; background-color: transparent; font-weight: bold;}
+#menu li a { border-radius: 9px; color: #0f4c75; border:2px solid #0f4c75; padding: 5px 20px; background-color: rgba(255,255,255,0.5); }
+#menu li a:hover{ background-color: #bbe1fa; border-color: #bbe1fa;}
+#menu li:first-child{ background-color: transparent; height: 40px; }
+#menu li:first-child a{ line-height: 1px; border:0; background-color: transparent;}
+#menu li.active{ background-color: transparent; line-height: 40px;}
+#menu li.active a {border-radius: 9px;background-color:#0f4c75 ;color:#bbe1fa ;  padding: 5px 20px;}
+#menu li.active:first-child a {background-color: transparent; line-height: 1px;padding: 5px 20px;}
+/*//상단 고정메뉴*/
+
+/*슬라이드 사진*/
+.slide .intro>div{width: 100%; height: 100vh; position: relative; background-color: #000;}/*
+#slide01{width: 100%; height: 100vh; position: relative;}
+#slide02{width: 100%; height: 100vh; position: relative;}
+#slide03{width: 100%; height: 100vh; position: relative;}
+#slide04{width: 100%; height: 100vh; position: relative;}*/
+.slide .intro img{ opacity: 0.65;}
+.fp-controlArrow{ opacity: 0.6 !important;}
+.slide_text{font-weight: bold; font-size: 3em; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-shadow: 2px 2px 5px #333;}
+/*//슬라이드 사진*/
+/*
+.slide_text01{font-weight: bold; font-size: 3em; padding-top: 120px; box-sizing: border-box; width: 500px; height: 300px; background-color: rgba(0, 0, 0, 0.5); border-radius: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
+.slide_text02{font-weight: bold; font-size: 3em; padding-top: 110px; box-sizing: border-box; width: 500px; height: 300px; background-color: rgba(0, 0, 0, 0.5); border-radius: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
+.slide_text03{font-weight: bold; font-size: 3em; padding-top: 110px; box-sizing: border-box; width: 500px; height: 300px; background-color: rgba(0, 0, 0, 0.5); border-radius: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
+.slide_text04{font-weight: bold; font-size: 3em; padding-top: 110px; box-sizing: border-box; width: 500px; height: 300px; background-color: rgba(0, 0, 0, 0.5); border-radius: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}*/
+
+/*뒷배경 영상*/
+#myVideo{width: inherit; height: inherit; position: fixed;}
+/* #company_info .wrap{width: 960px; height: 436px; background-color: rgba(0, 0, 0, 0.8); border-radius: 40px; z-index: 9999;} */
+/*//뒷배경 영상*/
+
+/*영상 위 로고, 글씨*/
+#info_text{width: 500px; height: 100px; color: #fff; font-size: 0.9em; position: absolute; top: 40%; padding-left: 60px; box-sizing: border-box; z-index: 9999;}
+#company_info{ width: 100%; height: 40vh; position: relative;}
+#company_info .wrap{ margin: 0 auto; position: relative;}
+#company_info .wrap #info_text{ position: absolute; left: 0; top: 20vh;}
+#company_info .wrap #info_text h2{/*background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;*/ font-size: 1.8em;text-shadow: 3px 3px 8px #333;}
+#company_info .wrap img{/*float: right;*/ padding-top: 30px; box-sizing: border-box; position: absolute; right: 0; z-index: 9999; height: 40vh;}
+/* #company_info video{width: inherit; height: inherit;} */
+/*//영상 위 로고, 글씨*/
+
+/*신청 버튼*/
+#section_ad{background-color: #0F4C75; width: 100%; height: 10vh; text-align: center; color:#fff; line-height: 10vh;}
+#section_ad .clickBtn{ background-color: #bbe1fa; color: #0F4C75; padding:10px; margin-left: 10%;}
+#section_ad h3{font-size: 2em;}
+/*//신청 버튼*/
+
+/*좌석 안내*/
+#section0_02{width: 100%; height: 40vh; padding-top: 3vh;}
+#section0_02 article{ float: left; width: 19.333%; text-align: center; margin: 0 7%; position: relative; padding: 1vh; box-sizing: border-box;}
+#section0_02 article img{ width: 100%;}
+#section0_02 article span.section0_02_text{ display: block; background-color: #ccc;}
+#section0_02 article span.overlap{ position: absolute; top:0; left: 0; background-color: rgba(0, 0, 0, 0.7);
+     width: 100%; height: 100%; opacity: 0;transition: all 1s;}
+#section0_02 article:hover span.overlap{ opacity: 1; }   
+.section0_02_text{color: #1B262C; font-size: 1.5em;} 
+.overlap{color: #fff; text-align: center; font-size: 2em; padding-top: 200px; box-sizing: border-box;}
+/*//좌석 안내*/
+/* .cover_box01{width: 230px; height: 245px; background-color: rgba(0, 0, 0, 0.5); position: absolute; left: 32%; font-size: 2em; color: #fff; box-sizing: border-box; padding-top: 18%; opacity: 0;}
+.cover_box02{width: 230px; height: 245px; background-color: rgba(0, 0, 0, 0.5); position: absolute; left: 32%; font-size: 2em; color: #fff; box-sizing: border-box; padding-top: 18%; opacity: 0;}
+.cover_box03{width: 230px; height: 245px; background-color: rgba(0, 0, 0, 0.5); position: absolute; left: 32%; font-size: 2em; color: #fff; box-sizing: border-box; padding-top: 18%; opacity: 0;} 
+
+#section0_sample{ width: 100%; height: 45vh;}
+#section0_sample .sample_box01{width: 33.33%; float: left; padding-top: 2%; position: relative;}
+#section0_sample .sample_box02{width: 33.33%; float: left; padding-top: 2%; position: relative;}
+#section0_sample .sample_box03{width: 33.33%; float: left; padding-top: 2%; position: relative;}
+#section0_sample .sample_text{margin-top: 3%; background-color: #eaeaea; color: #1B262C; font-size: 1.4em;}*/
+
+/*전경 사진*/
+#img_cover01{position: fixed; background-color: rgba(0, 0, 0, 0.5); width: 672px; height: 80px; color: #fff; font-size: 2em; line-height: 80px; opacity: 0;}
+#img_cover02{position: fixed; background-color: rgba(0, 0, 0, 0.5); width: 384px; height: 80px; color: #fff; font-size: 2em; line-height: 80px; opacity: 0;}
+#img_cover03{position: fixed; background-color: rgba(0, 0, 0, 0.5); width: 288px; height: 80px; color: #fff; font-size: 2em; line-height: 80px; opacity: 0;}
+#img_cover04{position: fixed; background-color: rgba(0, 0, 0, 0.5); width: 576px; height: 80px; color: #fff; font-size: 2em; line-height: 80px; opacity: 0;}
+#img_cover05{position: fixed; background-color: rgba(0, 0, 0, 0.5); width: 413px; height: 80px; color: #fff; font-size: 2em; line-height: 80px; opacity: 0;}
+#img_cover06{position: fixed; background-color: rgba(0, 0, 0, 0.5); width: 336px; height: 80px; color: #fff; font-size: 2em; line-height: 80px; opacity: 0;}
+#img_cover07{position: fixed; background-color: rgba(0, 0, 0, 0.5); width: 288px; height: 80px; color: #fff; font-size: 2em; line-height: 80px; opacity: 0;}
+
+#section2_wrap{position: relative; height: 100vh;}
+#section02_img01{width: 70%; height: 40vh; background-color: lightblue; position: absolute; top: 14%; right: -10%;}
+#section02_img02{width: 40%; height: 40vh; background-color: blue; position: absolute; right: -10px; bottom: 3%;}
+#section02_img03{width: 30%; height: 50vh; background-color: chocolate; position: absolute; top: 14%; left: 5%;}
+#section02_img04{width: 60%; height: 30vh; background-color: aqua; position: absolute; bottom: 3%;}
+#section02_img05{width: 43%; height: 83vh; background-color: red; position: absolute; bottom: 3%; left: -45%;}
+#section02_img06{width: 35%; height: 40vh; background-color: aqua; position: absolute; bottom: 3%; right: -42%;}
+#section02_img07{width: 30%; height: 40vh; background-color: blue; position: absolute; bottom: 46%; right: -42%;}
+/*//전경 사진*/
+
+/*지도 검색창*/
+#search{width: 100%;height: 70vh; background-color: gray; background-image: url(../img/map01.png); background-blend-mode: multiply; position: relative;}
+#search h2{padding-bottom: 20px; font-size: 2em; text-shadow: 3px 3px 8px #333;}
+#search_btn{width: 500px; height: 200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; /*background-color: rgba(0, 0, 0, 0.5);*/ border-radius: 40px; padding: 50px; box-sizing: border-box;}
+#search_btn input{width: 360px; height: 50px; background: transparent; outline: none; border: none; border-bottom: 5px solid #bbe1fa; color: #fff; font-size: 2em; position: relative;  }
+#search_btn button{cursor: pointer; background: none; border: none; position: absolute; right: 80px; bottom: 30px; outline: none;}
+/*//지도 검색창*/
+
+/*footer*/
+#footer{width: 100%; background-color: #1B262C; height: 30vh; color: #fff;}
+#footer img{float: left;width: 200px; height: 200px; padding-top: 50px;}
+#footer #address{float: right; text-align: left;}
+#footer #sns{float: right; padding: 4%;}
+#footer #sns img{width: 100px; height: 100px;}
+/*//footer*/
+
+/*좌석 상세보기 뒷배경*/
+#bglayer{position: fixed; top: 100%; left: 0; background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100vh; display: none; z-index: 9998;}
+#overlayer01{position: fixed; top: 50%; left: 50%; transform: translate(-50%,75%); padding: 30px; border-radius: 10px; background-color: #fff; display: none; z-index: 99999;}
+#overlayer02{position: fixed; top: 50%; left: 50%; transform: translate(-50%,75%); padding: 30px; border-radius: 10px; background-color: #fff; display: none; z-index: 99999;}
+#overlayer03{position: fixed; top: 50%; left: 50%; transform: translate(-50%,75%); padding: 30px; border-radius: 10px; background-color: #fff; display: none; z-index: 99999;}
+/*//좌석 상세보기 뒷배경*/
+
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+     background-color: black; /* in case the video doesn't fit the whole page*/
+      /*background-image:  our video; */
+      background-position: center center;
+      background-size: contain;
+       object-fit: cover; /*cover video background */
+       z-index:3;
+}

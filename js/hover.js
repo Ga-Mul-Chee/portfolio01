@@ -1,0 +1,54 @@
+$(document).ready(function(){
+    $(".sample_box01").hover(function(){
+        $(".cover_box01").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $(".cover_box01").stop().animate({"opacity":"0"},1000);
+    });
+    $(".sample_box02").hover(function(){
+        $(".cover_box02").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $(".cover_box02").stop().animate({"opacity":"0"},1000);
+    });
+    $(".sample_box03").hover(function(){
+        $(".cover_box03").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $(".cover_box03").stop().animate({"opacity":"0"},1000);
+    });
+
+
+    $("#section02_img01").hover(function(){
+        $("#img_cover01").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $("#img_cover01").stop().animate({"opacity":"0"},1000);
+    });
+    $("#section02_img02").hover(function(){
+        $("#img_cover02").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $("#img_cover02").stop().animate({"opacity":"0"},1000);
+    });
+    $("#section02_img03").hover(function(){
+        $("#img_cover03").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $("#img_cover03").stop().animate({"opacity":"0"},1000);
+    });
+    $("#section02_img04").hover(function(){
+        $("#img_cover04").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $("#img_cover04").stop().animate({"opacity":"0"},1000);
+    });
+    $("#section02_img05").hover(function(){
+        $("#img_cover05").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $("#img_cover05").stop().animate({"opacity":"0"},1000);
+    });
+    $("#section02_img06").hover(function(){
+        $("#img_cover06").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $("#img_cover06").stop().animate({"opacity":"0"},1000);
+    });
+    $("#section02_img07").hover(function(){
+        $("#img_cover07").stop().animate({"opacity":"1"},1000);
+    },function(){
+        $("#img_cover07").stop().animate({"opacity":"0"},1000);
+    });
+});
